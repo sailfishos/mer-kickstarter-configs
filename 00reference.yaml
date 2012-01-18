@@ -1,0 +1,153 @@
+ExternalConfigs:
+     - mer
+
+Configurations:
+        - Name: mer-core-i586-base
+          Active: True
+          Inherit:    
+            - SSSE3 enabled X86 architecture
+            - Mer Base System
+          FileName: mer-core-i586-base
+
+        - Name: mer-core-armv6l-base
+          Active: True
+          Inherit:    
+            - ARMv6 softfp architecture
+            - Mer Base System
+          FileName: mer-core-armv6l-base
+
+        - Name: mer-core-armv7l-base
+          Active: True
+          Inherit:    
+            - ARMv7 softfp architecture
+            - Mer Base System
+          FileName: mer-core-armv7l-base
+
+        - Name: mer-core-armv7hl-base
+          Active: True
+          Inherit:    
+            - ARMv7 hardfp architecture
+            - Mer Base System
+          FileName: mer-core-armv7hl-base
+
+        - Name: mer-core-i486-base
+          Active: True
+          Inherit:    
+            - Generic X86 architecture
+            - Mer Base System
+          FileName: mer-core-i486-base
+
+
+        - Name: mer-core-i586-xorg-basic-qmlviewer
+          Active: True
+          Inherit:    
+            - SSSE3 enabled X86 architecture
+            - Mer Base System
+            - Mer Xorg enablement
+            - Mer Xorg basic drivers
+          FileName: mer-core-i586-xorg-basic-qmlviewer
+
+        - Name: mer-core-armv6l-xorg-basic-qmlviewer
+          Active: True
+          Inherit:    
+            - ARMv6 softfp architecture
+            - Mer Base System
+            - Mer Xorg enablement
+            - Mer Xorg basic drivers
+          FileName: mer-core-armv6l-xorg-basic-qmlviewer
+          ExtraPackages:
+            - qt-qmlviewer
+
+        - Name: mer-core-armv7l-xorg-basic-qmlviewer
+          Active: True
+          Inherit:    
+            - ARMv7 softfp architecture
+            - Mer Base System
+            - Mer Xorg enablement
+            - Mer Xorg basic drivers
+          FileName: mer-core-armv7l-xorg-basic-qmlviewer
+          ExtraPackages:
+            - qt-qmlviewer
+
+        - Name: mer-core-armv7hl-xorg-basic-qmlviewer
+          Active: True
+          Inherit:    
+            - ARMv7 hardfp architecture
+            - Mer Base System
+            - Mer Xorg enablement
+            - Mer Xorg basic drivers
+          FileName: mer-core-armv7hl-xorg-basic-qmlviewer
+          ExtraPackages:
+            - qt-qmlviewer
+
+        - Name: mer-core-i486-xorg-basic-qmlviewer
+          Active: True
+          Inherit:    
+            - Generic X86 architecture
+            - Mer Base System
+            - Mer Xorg enablement
+            - Mer Xorg basic drivers
+          FileName: mer-core-i486-xorg-basic-qmlviewer
+          ExtraPackages:
+            - qt-qmlviewer
+
+        - Name: mer-core-i586-connectivity-xorg-basic-qmlviewer
+          Active: True
+          Inherit:    
+            - SSSE3 enabled X86 architecture
+            - Mer Base System
+            - Mer Xorg enablement
+            - Mer Xorg basic drivers
+            - Mer Connectivity
+          FileName: mer-core-i586-connectivity-xorg-basic-qmlviewer
+          ExtraPackages:
+            - qt-qmlviewer
+
+        - Name: mer-core-armv6l-connectivity-xorg-basic-qmlviewer
+          Active: True
+          Inherit:    
+            - ARMv6 softfp architecture
+            - Mer Base System
+            - Mer Xorg enablement
+            - Mer Xorg basic drivers
+            - Mer Connectivity
+          FileName: mer-core-armv6l-connectivity-xorg-basic-qmlviewer
+          ExtraPackages:
+            - qt-qmlviewer
+
+        - Name: mer-core-armv7l-connectivity-xorg-basic-qmlviewer
+          Active: True
+          Inherit:    
+            - ARMv7 softfp architecture
+            - Mer Base System
+            - Mer Xorg enablement
+            - Mer Xorg basic drivers
+            - Mer Connectivity
+          FileName: mer-core-armv7l-connectivity-xorg-basic-qmlviewer
+          ExtraPackages:
+            - qt-qmlviewer
+
+        - Name: mer-core-armv7hl-connectivity-xorg-basic-qmlviewer
+          Active: True
+          Inherit:    
+            - ARMv7 hardfp architecture
+            - Mer Base System
+            - Mer Xorg enablement
+            - Mer Xorg basic drivers
+            - Mer Connectivity
+          FileName: mer-core-armv7hl-connectivity-xorg-basic-qmlviewer
+          ExtraPackages:
+            - qt-qmlviewer
+
+        - Name: mer-core-i486-connectivity-xorg-basic-qmlviewer
+          Active: True
+          Inherit:    
+            - Generic X86 architecture
+            - Mer Base System
+            - Mer Xorg enablement
+            - Mer Xorg basic drivers
+            - Mer Connectivity
+          FileName: mer-core-i486-connectivity-xorg-basic-qmlviewer
+          ExtraPackages:
+            - qt-qmlviewer
+ 

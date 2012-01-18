@@ -1,0 +1,54 @@
+Repositories:
+    -   Name: mer-core
+        Url:  http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/packages
+
+ARMv7 softfp architecture:
+        Architecture: armv7l
+
+ARMv7 hardfp architecture:
+        Architecture: armv7hl
+
+ARMv6 softfp architecture:
+        Architecture: armv6l
+
+SSSE3 enabled X86 architecture:
+        Architecture: i586 
+
+Generic X86 architecture:
+        Architecture: i486
+
+MIPS little-endian architecture:
+        Architecture: mipsel
+
+Mer Base System:
+        Language: en_US.UTF-8        
+        RootPass: rootme
+        DefaultUser: mer
+        DefaultUserPass: rootme
+        Keyboard: us
+        Timezone: UTC
+        PartSize: 500
+        FileSystem: ext4
+        RepositoryOptions: --save --debuginfo --source
+
+        Repos:
+         - mer-core
+        Groups:
+         - Mer Core
+
+Mer Connectivity:
+        Groups: 
+         - Mer Connectivity
+
+Mer Xorg enablement:
+        Groups: 
+         - Mer Graphics Common
+         - Mer Minimal Xorg
+
+Mer Xorg basic drivers:
+        ExtraPackages:
+         - xorg-x11-drv-evdev
+         - xorg-x11-drv-kbd
+         - xorg-x11-drv-vesa
+         - xorg-x11-drv-fbdev
+
