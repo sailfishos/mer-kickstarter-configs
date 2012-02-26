@@ -1,2 +1,9 @@
+* Sun Feb 26 2012 Carsten Munk <carsten.munk@gmail.com> - 0.2
+- Rename "MIPS little-endian architecture" to "MIPS32 O32 ABI architecture"
+- Add rpm-rebuilddb and prelink postscripts for base
+- Rename Mer Xorg basic drivers to Mer Xorg failsafe startup
+- Add qmlviewer session startup postscripts to qmlviewer reference images
+- Add mipsel reference images
+
 * Wed Jan 18 2012 Carsten Munk <carsten.munk@gmail.com> - 0.1
 - First release

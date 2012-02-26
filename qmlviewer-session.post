@@ -1,0 +1,11 @@
+# Create a session file for qmlviewer.
+cat > /usr/share/xsessions/X-MER-QMLVIEWER.desktop << EOF
+[Desktop Entry]
+Version=1.0
+Name=qmlviewer
+Exec=/usr/bin/qmlviewer
+Type=Application
+EOF
+
+# Set symlink pointing to .desktop file 
+ln -sf X-MER-QMLVIEWER.desktop /usr/share/xsessions/default.desktop

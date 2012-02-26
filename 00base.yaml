@@ -17,7 +17,7 @@ SSSE3 enabled X86 architecture:
 Generic X86 architecture:
         Architecture: i486
 
-MIPS little-endian architecture:
+MIPS32 O32 ABI architecture:
         Architecture: mipsel
 
 Mer Base System:
@@ -36,6 +36,10 @@ Mer Base System:
         Groups:
          - Mer Core
 
+        PostScripts: 
+         - mer/rpm-rebuilddb.post
+         - mer/prelink.post
+
 Mer Connectivity:
         Groups: 
          - Mer Connectivity
@@ -45,10 +49,12 @@ Mer Xorg enablement:
          - Mer Graphics Common
          - Mer Minimal Xorg
 
-Mer Xorg basic drivers:
+Mer Xorg failsafe startup:
         ExtraPackages:
          - xorg-x11-drv-evdev
-         - xorg-x11-drv-kbd
          - xorg-x11-drv-vesa
          - xorg-x11-drv-fbdev
+         - xorg-x11-server-Xorg-setuid
+        RemovePackages:
+         - xorg-x11-server-Xorg
 

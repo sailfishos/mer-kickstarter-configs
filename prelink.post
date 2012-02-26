@@ -1,0 +1,8 @@
+# Prelink can reduce boot time
+if [ -x /usr/sbin/prelink ]; then
+   echo -n "Running prelink.."
+   /usr/sbin/prelink -aRqm
+   echo "done"
+fi
+
+
