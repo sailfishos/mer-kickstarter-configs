@@ -1,3 +1,4 @@
+## qmlviewer-session.post from mer-kickstarter-configs package
 # Create a session file for qmlviewer.
 cat > /usr/share/xsessions/X-MER-QMLVIEWER.desktop << EOF
 [Desktop Entry]
@@ -9,3 +10,4 @@ EOF
 
 # Set symlink pointing to .desktop file 
 ln -sf X-MER-QMLVIEWER.desktop /usr/share/xsessions/default.desktop
+## end qmlviewer-session.post

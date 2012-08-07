@@ -1,63 +1,63 @@
 ExternalConfigs:
-     - mer
+     - /usr/share/kickstarter-configs/mer
 
 Configurations:
         - Name: mer-core-i586-base
           Active: True
-          Inherit:    
+          Inherit:
             - SSSE3 enabled X86 architecture
             - Mer Base System
           FileName: mer-core-i586-base
 
         - Name: mer-core-armv6l-base
           Active: True
-          Inherit:    
+          Inherit:
             - ARMv6 softfp architecture
             - Mer Base System
           FileName: mer-core-armv6l-base
 
         - Name: mer-core-armv7l-base
           Active: True
-          Inherit:    
+          Inherit:
             - ARMv7 softfp architecture
             - Mer Base System
           FileName: mer-core-armv7l-base
 
         - Name: mer-core-armv7hl-base
           Active: True
-          Inherit:    
+          Inherit:
             - ARMv7 hardfp architecture
             - Mer Base System
           FileName: mer-core-armv7hl-base
 
         - Name: mer-core-i486-base
           Active: True
-          Inherit:    
+          Inherit:
             - Generic X86 architecture
             - Mer Base System
           FileName: mer-core-i486-base
 
         - Name: mer-core-mipsel-base
           Active: True
-          Inherit:    
+          Inherit:
             - MIPS32 O32 ABI architecture
             - Mer Base System
           FileName: mer-core-mipsel-base
 
         - Name: mer-core-i586-xorg-basic-qmlviewer
           Active: True
-          Inherit:    
+          Inherit:
             - SSSE3 enabled X86 architecture
             - Mer Base System
             - Mer Xorg enablement
             - Mer Xorg failsafe startup
           FileName: mer-core-i586-xorg-basic-qmlviewer
           PostScripts:
-            - mer-reference-images/qmlviewer-session.post
+            - qmlviewer-session.post
 
         - Name: mer-core-armv6l-xorg-basic-qmlviewer
           Active: True
-          Inherit:    
+          Inherit:
             - ARMv6 softfp architecture
             - Mer Base System
             - Mer Xorg enablement
@@ -66,10 +66,10 @@ Configurations:
           ExtraPackages:
             - qt-qmlviewer
           PostScripts:
-            - mer-reference-images/qmlviewer-session.post   
+            - qmlviewer-session.post
         - Name: mer-core-armv7l-xorg-basic-qmlviewer
           Active: True
-          Inherit:    
+          Inherit:
             - ARMv7 softfp architecture
             - Mer Base System
             - Mer Xorg enablement
@@ -78,11 +78,11 @@ Configurations:
           ExtraPackages:
             - qt-qmlviewer
           PostScripts:
-            - mer-reference-images/qmlviewer-session.post
+            - qmlviewer-session.post
 
         - Name: mer-core-armv7hl-xorg-basic-qmlviewer
           Active: True
-          Inherit:    
+          Inherit:
             - ARMv7 hardfp architecture
             - Mer Base System
             - Mer Xorg enablement
@@ -91,10 +91,10 @@ Configurations:
           ExtraPackages:
             - qt-qmlviewer
           PostScripts:
-            - mer-reference-images/qmlviewer-session.post
+            - qmlviewer-session.post
         - Name: mer-core-i486-xorg-basic-qmlviewer
           Active: True
-          Inherit:    
+          Inherit:
             - Generic X86 architecture
             - Mer Base System
             - Mer Xorg enablement
@@ -103,10 +103,10 @@ Configurations:
           ExtraPackages:
             - qt-qmlviewer
           PostScripts:
-            - mer-reference-images/qmlviewer-session.post
+            - qmlviewer-session.post
         - Name: mer-core-mipsel-xorg-basic-qmlviewer
           Active: True
-          Inherit:    
+          Inherit:
             - MIPS32 O32 ABI architecture
             - Mer Base System
             - Mer Xorg enablement
@@ -115,11 +115,11 @@ Configurations:
           ExtraPackages:
             - qt-qmlviewer
           PostScripts:
-            - mer-reference-images/qmlviewer-session.post
+            - qmlviewer-session.post
 
         - Name: mer-core-i586-connectivity-xorg-basic-qmlviewer
           Active: True
-          Inherit:    
+          Inherit:
             - SSSE3 enabled X86 architecture
             - Mer Base System
             - Mer Xorg enablement
@@ -129,10 +129,10 @@ Configurations:
           ExtraPackages:
             - qt-qmlviewer
           PostScripts:
-            - mer-reference-images/qmlviewer-session.post
+            - qmlviewer-session.post
         - Name: mer-core-armv6l-connectivity-xorg-basic-qmlviewer
           Active: True
-          Inherit:    
+          Inherit:
             - ARMv6 softfp architecture
             - Mer Base System
             - Mer Xorg enablement
@@ -142,11 +142,11 @@ Configurations:
           ExtraPackages:
             - qt-qmlviewer
           PostScripts:
-            - mer-reference-images/qmlviewer-session.post
+            - qmlviewer-session.post
 
         - Name: mer-core-armv7l-connectivity-xorg-basic-qmlviewer
           Active: True
-          Inherit:    
+          Inherit:
             - ARMv7 softfp architecture
             - Mer Base System
             - Mer Xorg enablement
@@ -156,11 +156,11 @@ Configurations:
           ExtraPackages:
             - qt-qmlviewer
           PostScripts:
-            - mer-reference-images/qmlviewer-session.post
+            - qmlviewer-session.post
 
         - Name: mer-core-armv7hl-connectivity-xorg-basic-qmlviewer
           Active: True
-          Inherit:    
+          Inherit:
             - ARMv7 hardfp architecture
             - Mer Base System
             - Mer Xorg enablement
@@ -170,11 +170,11 @@ Configurations:
           ExtraPackages:
             - qt-qmlviewer
           PostScripts:
-            - mer-reference-images/qmlviewer-session.post
+            - qmlviewer-session.post
 
         - Name: mer-core-i486-connectivity-xorg-basic-qmlviewer
           Active: True
-          Inherit:    
+          Inherit:
             - Generic X86 architecture
             - Mer Base System
             - Mer Xorg enablement
@@ -184,11 +184,11 @@ Configurations:
           ExtraPackages:
             - qt-qmlviewer
           PostScripts:
-            - mer-reference-images/qmlviewer-session.post
- 
+            - qmlviewer-session.post
+
         - Name: mer-core-mipsel-connectivity-xorg-basic-qmlviewer
           Active: True
-          Inherit:    
+          Inherit:
             - MIPS32 O32 ABI architecture
             - Mer Base System
             - Mer Xorg enablement
@@ -198,5 +198,5 @@ Configurations:
           ExtraPackages:
             - qt-qmlviewer
           PostScripts:
-            - mer-reference-images/qmlviewer-session.post
+            - qmlviewer-session.post
 

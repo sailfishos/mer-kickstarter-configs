@@ -1,8 +1,8 @@
+## prelink.post from mer-kickstarter-configs package
 # Prelink can reduce boot time
 if [ -x /usr/sbin/prelink ]; then
    echo -n "Running prelink.."
    /usr/sbin/prelink -aRqm
    echo "done"
 fi
-
-
+## end prelink.post

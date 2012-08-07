@@ -11,8 +11,9 @@ ARMv7 hardfp architecture:
 ARMv6 softfp architecture:
         Architecture: armv6l
 
+# Needs to be i686 due to https://bugs.merproject.org/show_bug.cgi?id=437
 SSSE3 enabled X86 architecture:
-        Architecture: i586 
+        Architecture: i686 
 
 Generic X86 architecture:
         Architecture: i486
@@ -29,7 +30,7 @@ Mer Base System:
         Timezone: UTC
         PartSize: 500
         FileSystem: ext4
-        RepositoryOptions: --save --debuginfo --source
+        RepositoryOptions: --save --debuginfo
 
         Repos:
          - mer-core
@@ -37,8 +38,8 @@ Mer Base System:
          - Mer Core
 
         PostScripts: 
-         - mer/rpm-rebuilddb.post
-         - mer/prelink.post
+         - rpm-rebuilddb.post
+         - prelink.post
 
 Mer Connectivity:
         Groups: 

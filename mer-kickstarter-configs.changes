@@ -1,3 +1,9 @@
+* Tue Aug 07 2012 David Greaves <david@dgreaves.com> - 0.3
+ - Remove path prefix from PostScripts and commented them
+ - Change SSSE3 enabled X86 architecture due to MER#437
+ - Remove --source option from repos (we don't do src rpms)
+ - Make the reference images use absolute path to mer
+
 * Sun Feb 26 2012 Carsten Munk <carsten.munk@gmail.com> - 0.2
 - Rename "MIPS little-endian architecture" to "MIPS32 O32 ABI architecture"
 - Add rpm-rebuilddb and prelink postscripts for base
