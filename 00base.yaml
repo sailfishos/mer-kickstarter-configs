@@ -7,6 +7,13 @@ ARMv7 softfp architecture:
 
 ARMv7 hardfp architecture:
         Architecture: armv7hl
+        PostScripts:
+         - arch-armv7hl.post
+
+ARMv7 thumb neon hardfp architecture:
+        Architecture: armv7tnhl
+        PostScripts:
+         - arch-armv7tnhl.post
 
 ARMv6 softfp architecture:
         Architecture: armv6l
