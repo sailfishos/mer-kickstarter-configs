@@ -1,6 +1,6 @@
 Name:       mer-kickstarter-configs
 Summary:    Kickstarter configs for Mer Core
-Version:    0.3
+Version:    0.3.1
 Release:    1
 Group:      System/Base
 License:    Public Domain
@@ -12,7 +12,8 @@ Source2:    Makefile
 Source3:    rpm-rebuilddb.post
 Source4:    prelink.post
 Source5:    qmlviewer-session.post
-BuildRoot:  %{_tmppath}/%{name}-%{version}-build
+Source6:    arch-armv7hl.post
+Source7:    arch-armv7tnhl.post
 
 %description
 Create Configuration files to build Mer Core products with
@@ -25,6 +26,8 @@ cp %{SOURCE2} .
 cp %{SOURCE3} .
 cp %{SOURCE4} .
 cp %{SOURCE5} .
+cp %{SOURCE6} .
+cp %{SOURCE7} .
 
 %build
 make
@@ -39,7 +42,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kickstarter-configs/mer/00base.yaml
 %{_datadir}/kickstarter-configs/mer/rpm-rebuilddb.post
 %{_datadir}/kickstarter-configs/mer/prelink.post
+%{_datadir}/kickstarter-configs/mer/arch-armv7hl.post
+%{_datadir}/kickstarter-configs/mer/arch-armv7tnhl.post
 %{_datadir}/kickstarter-configs/mer-reference-images/00reference.yaml
 %{_datadir}/kickstarter-configs/mer-reference-images/qmlviewer-session.post
-
 # << files

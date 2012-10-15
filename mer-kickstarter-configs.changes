@@ -1,3 +1,6 @@
+* Mon Oct 15 2012 Marko Saukko <marko.saukko@jollamobile.com> - 0.3.1
+- Install also the arch-*.post scripts.
+
 * Tue Aug 07 2012 David Greaves <david@dgreaves.com> - 0.3
  - Remove path prefix from PostScripts and commented them
  - Change SSSE3 enabled X86 architecture due to MER#437
