@@ -1,6 +1,6 @@
 Repositories:
     -   Name: mer-core
-        Url:  http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/packages
+        Url:  http://releases.merproject.org/releases/@MER_RELEASE@/builds/@ARCH@/packages
 
 ARMv7 softfp architecture:
         Architecture: armv7l

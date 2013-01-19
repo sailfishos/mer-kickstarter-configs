@@ -1,3 +1,7 @@
+* Sat Jan 19 2013 David Greaves <david@dgreaves.com> - 0.4
+- Use @MER_RELEASE@ instead of @BUILD_ID@ in the repo URL now
+  that mic supports --tokenmap
+
 * Mon Oct 15 2012 Marko Saukko <marko.saukko@jollamobile.com> - 0.3.1
 - Install also the arch-*.post scripts.
 
