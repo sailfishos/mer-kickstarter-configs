@@ -2,6 +2,48 @@ ExternalConfigs:
      - /usr/share/kickstarter-configs/mer
 
 Configurations:
+        - Name: mer-target-i486
+          Active: True
+          Inherit:
+            - Generic X86 architecture
+            - Mer Target
+
+        - Name: mer-target-i586
+          Active: True
+          Inherit:
+            - SSSE3 enabled X86 architecture
+            - Mer Target
+
+        - Name: mer-target-armv6l
+          Active: True
+          Inherit:
+            - ARMv6 softfp architecture
+            - Mer Target
+
+        - Name: mer-target-armv7l
+          Active: True
+          Inherit:
+            - ARMv7 softfp architecture
+            - Mer Target
+
+        - Name: mer-target-armv7hl
+          Active: True
+          Inherit:
+            - ARMv7 hardfp architecture
+            - Mer Target
+
+        - Name: mer-target-armv7tnhl
+          Active: True
+          Inherit:
+            - ARMv7 thumb neon hardfp architecture
+            - Mer Target
+
+        - Name: mer-target-mipsel
+          Active: True
+          Inherit:
+            - MIPS32 O32 ABI architecture
+            - Mer Target
+
         - Name: mer-core-i586-base
           Active: True
           Inherit:

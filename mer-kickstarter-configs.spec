@@ -1,6 +1,6 @@
 Name:       mer-kickstarter-configs
 Summary:    Kickstarter configs for Mer Core
-Version:    0.4
+Version:    0.5
 Release:    1
 Group:      System/Base
 License:    Public Domain

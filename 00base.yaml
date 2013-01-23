@@ -28,7 +28,7 @@ Generic X86 architecture:
 MIPS32 O32 ABI architecture:
         Architecture: mipsel
 
-Mer Base System:
+Base Image:
         Language: en_US.UTF-8        
         RootPass: rootme
         DefaultUser: mer
@@ -39,6 +39,9 @@ Mer Base System:
         FileSystem: ext4
         RepositoryOptions: --save --debuginfo
 
+Mer Base System:
+        Inherit:
+          - Base Image
         Repos:
          - mer-core
         Groups:
@@ -47,6 +50,36 @@ Mer Base System:
         PostScripts: 
          - rpm-rebuilddb.post
          - prelink.post
+
+Mer Target:
+        Inherit:
+          - Base Image
+        Repos:
+         - mer-core
+        ExtraPackages:
+         # Normal C + Qt development
+         - libqt-devel
+         - glibc-devel
+
+         # Mer GL APIs
+         - mesa-llvmpipe-libEGL-devel
+         - mesa-llvmpipe-libGLESv2-devel
+
+         # Allow mic to finish without:
+         #  Error <kickstart>: Unable to set unencrypted password
+         #  due to lack of /usr/sbin/chpasswd
+         - shadow-utils
+
+         # Support building rpms inside the sb2 target
+         # Note that these need the mersdk user added to /etc/{passwd,group}
+         - rpm-build
+         - meego-rpm-config
+
+         # support using zypper to update target
+         - zypper
+
+        PostScripts: 
+         - rpm-rebuilddb.post
 
 Mer Connectivity:
         Groups: 
